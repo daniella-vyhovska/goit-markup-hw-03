@@ -22,6 +22,12 @@ p, h1, h2, h3, h4, h5, h6 {
     margin-block: 0;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .container {
     max-width: 1158px;
     width: 100%;
@@ -30,18 +36,13 @@ p, h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
 }
 
-.section {
-    padding: 120px;
-}
-
 
 
 .header {
     border-bottom: 1px solid #e7e9fc;
-    padding-block: 24px;
 }
 
-.header .container {
+.header-container {
     display: flex;
     align-items: center;
 }
@@ -49,6 +50,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .header-nav {
     display: flex;
     margin-right: auto;
+    padding-block: 24px;
 }
 
 .header-logo {
@@ -72,10 +74,12 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .header-link {
     font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #2e2f42;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .header-link:hover,
@@ -109,7 +113,11 @@ color: #434455;
 
 .hero{
 background-color: #2e2f42;
-padding: 188px 472px;
+}
+
+.hero-container {
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .hero-title {
@@ -120,8 +128,8 @@ letter-spacing: 0.02em;
 text-align: center;
 color: #fff;
 max-width: 496px;
-margin: 0 auto;
-margin-bottom: 48px;
+    margin: 0 auto;
+    margin-bottom: 48px;
 }
 
 .hero-button {
@@ -138,7 +146,6 @@ min-width: 169px;
 border: none;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 display: block;
-margin-top: 48px;
 margin-bottom: 188px;
 margin: 0 auto;
 }
@@ -259,18 +266,17 @@ margin-bottom: 72px;
     gap: 48px 24px;
 }
 
-
-
 .portfolio-item {
-    width: calc((100% - 24 * 2) / 3);
+width: calc((100% - 24 * 2) / 3);
 }
 
-.portfolio-item .container {
+.portfolio-container {
+    padding: 32px 16px;
     border-bottom: 1px solid #e7e9fc;
-border-left: 1px solid #e7e9fc;
-border-right: 1px solid #e7e9fc;
-padding: 32px 16px;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
 }
+
 .portfolio-subtitle {
 font-weight: 500;
 font-size: 20px;
@@ -289,9 +295,12 @@ letter-spacing: 0.02em;
 
 .footer {
 background-color: #2e2f42;
-padding: 100px 1020px 100px 156px;
 }
 
+.footer-container {
+padding-top: 100px;
+padding-bottom: 100px;
+}
 
 .footer-logo {
     font-family: "Raleway", sans-serif;
@@ -302,7 +311,6 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #f4f4fd;
 margin-left: auto;
-margin-bottom: 16px;
 }
 .accent {
     color: #4d5ae5;
